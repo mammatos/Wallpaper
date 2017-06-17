@@ -51,3 +51,107 @@ table {
 * {
 	box-sizing: border-box;
 }
+
+.wallpaper__container {
+	width: 100%;
+	background-color: #000;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 11.7rem;
+	flex-wrap: wrap;
+}
+
+.wallpaper__primary-left,
+.wallpaper__primary-right {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wallpaper__primary-left {
+	order: 2;
+}
+
+.wallpaper__primary-top {
+	width: 50%;
+	order: 1;
+}
+
+.wallpaper__primary-right {
+	order: 3;
+	margin-top: 2rem;
+}
+
+.wallpaper__pic {
+	width: 100%;
+}
+
+.text {
+	color: #fff;
+	font-family: Verdana, Tahoma, sans-serif;
+	padding: 1.2rem;
+	letter-spacing: 0.2rem;
+    font-size: 0.6rem;
+	margin-top: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.3rem;
+}
+
+.wallpaper__cta-button {
+	padding: 0.6rem 1rem;
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: Verdana, Tahoma, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.6rem;
+    margin: 0 auto;
+	letter-spacing: 0.3rem;
+}
+
+@media (min-width: 600px) {
+	.text {
+		font-size: 1rem;
+	}
+
+	.wallpaper__cta-button {
+		padding: 1rem 2.8rem;
+		font-size: 1rem;
+	}
+
+	.wallpaper__container {
+		flex-wrap: nowrap;
+		flex-direction: row;
+	}
+
+	.wallpaper__primary-left {
+		width: 25%;
+		order: 1;
+	}
+
+	.wallpaper__primary-top {
+		width: 50%;
+		order: 1;
+	}
+
+	.wallpaper__primary-right {
+		width: 25%;
+		order: 1;
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 1090px)  {
+	.text {
+    	font-size: 1.5rem;
+		letter-spacing: 0.3rem;
+		margin-top: 10rem;
+    	margin-bottom: 3.75rem;
+    	line-height: 1.7rem;
+  	}
+
+	.wallpaper__cta-button {
+	  	padding: 1.5rem 3.3rem;
+		font-size: 1.5rem;
+  	}
+}
